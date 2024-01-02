@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <title>Food Recommendation System</title>
+</head>
+
+<body>
+    <div
+  class="bg-image"
+  style="
+    background-image: url('static/5315657.jpg');
+    height: 200vh;
+  ">
+        <h1 style="font-family: 'Silkscreen', sans-serif;" class="text-center">Food Recommendation System</h1>
+        <br>
+        <br>
+        <div class="text-center">
+            <h1 style="font-family: 'Silkscreen', sans-serif;">Enter your dietary goals</h1>
+            <form action="/" method="post">
+                <label for="dietary_goals">Dietary Goals:</label>
+                <select name="dietary_goals" id="dietary_goals">
+                    <option value="Weight Gain">Weight Gain</option>
+                    <option value="Weight Loss">Weight Loss</option>
+                    <option value="Maintaining Weight">Maintaining Weight</option>
+                </select>
+
+                <br>
+                <br>
+                <h3 style="font-family: 'Silkscreen', sans-serif;">Enter food preference</h3>
+                <label for="restrictions">Food Preference:</label>
+                <select name="restrictions" id="restrictions">
+                    <option value="Vegan">Vegan</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Non-Vegetarian">Non-Vegetarian</option>
+                </select>
+
+                <br>
+                <br>
+                <h3 style="font-family: 'Silkscreen', sans-serif;">Enter a meal type</h3>
+                <label for="meal_type">Meal Type:</label>
+                <select name="meal_type" id="meal_type">
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Snack">Snack</option>
+                </select>
+
+                <br>
+                <br>
+                <h3 style="font-family: 'Silkscreen', sans-serif;">Enter height in inches</h3>
+                <label for="height">Height (in inches):</label>
+                <input type="number" name="height" id="height">
+
+                <br>
+                <br>
+                <h3 style="font-family: 'Silkscreen', sans-serif;">Enter weight in LBS</h3>
+                <label for="weight">Weight (in pounds):</label>
+                <input type="number" name="weight" id="weight">
+
+                <br>
+                <br>
+                <br>
+
+                <input type="submit" value="Go!">
+            </form>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+
+        
+        <div class="text-center" class="card">
+            <h1 style="font-family: 'Silkscreen', sans-serif;">{{ req }}</h1>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
