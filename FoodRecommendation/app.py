@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 from openai import OpenAI
 app = Flask(__name__)
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="YOUR API KEY")
 
 @app.route("/", methods=['GET', 'POST'])
 def index() -> str:
